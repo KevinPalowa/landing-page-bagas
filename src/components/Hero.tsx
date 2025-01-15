@@ -1,3 +1,28 @@
+import { BsGeoAlt } from "react-icons/bs";
+
+const data = [
+  {
+    title: "Pelacakan Kendaraan Real-Time",
+    desc: "Dengan Fleetwize, Anda bisa memantau lokasi kendaraan Anda kapan saja, sehingga lebih tenang dalam perjalanan.",
+  },
+
+  {
+    title: "Pemberitahuan Pemeliharaan Kendaraan",
+    desc: "Jangan pernah lewatkan jadwal servis atau perawatan rutin kendaraan Anda lagi. Fleetwize akan mengingatkan Anda.",
+  },
+  {
+    title: "Pantau Penggunaan Bahan Bakar",
+    desc: "Optimalkan pengeluaran bahan bakar Anda dengan memantau penggunaan bahan bakar kendaraan secara akurat.",
+  },
+  {
+    title: "Laporan dan Analisis",
+    desc: "Dapatkan laporan perjalanan yang membantu Anda memahami penggunaan kendaraan dan merencanakan perjalanan lebih baik.",
+  },
+  {
+    title: "Keamanan Kendaraan",
+    desc: "Dengan fitur geofencing dan pelacakan, Anda dapat mengamankan kendaraan dari risiko pencurian atau kehilangan.",
+  },
+];
 const Hero = () => {
   return (
     <section id="hero" className="hero section relative bg-cover bg-center">
@@ -34,23 +59,21 @@ const Hero = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          <div
-            className="p-6 text-center bg-white rounded-lg shadow-lg"
-            data-aos="zoom-out"
-            data-aos-delay="100"
-          >
-            <div className="text-blue-600 text-4xl mb-4">
-              <i className="bi bi-geo-alt"></i>
+          {data.map((e) => (
+            <div
+              className="p-6 bg-white rounded-lg shadow-lg text-left"
+              data-aos="zoom-out"
+              data-aos-delay="100"
+            >
+              <div className="text-blue-600 text-4xl mb-4">
+                <BsGeoAlt className="text-[#2487ce]" />
+              </div>
+              <h4 className="text-xl font-semibold mb-2 text-[#124265]">
+                {e.title}
+              </h4>
+              <p className="text-gray-400">{e.desc}</p>
             </div>
-            <h4 className="text-xl font-semibold mb-2">
-              Pelacakan Kendaraan Real-Time
-            </h4>
-            <p className="text-gray-600">
-              Dengan Fleetwize, Anda bisa memantau lokasi kendaraan Anda kapan
-              saja, sehingga lebih tenang dalam perjalanan.
-            </p>
-          </div>
-          {/* Add other icon boxes following the same structure */}
+          ))}
         </div>
       </div>
     </section>

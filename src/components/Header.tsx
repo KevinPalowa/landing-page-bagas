@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header className="header sticky top-0 bg-white shadow z-50">
-      <div className="container mx-auto flex items-center justify-between px-4 lg:px-16">
+      <div className="container mx-auto flex items-center justify-between px-4 lg:px-16 py-7">
         <a href="/" className="logo flex items-center">
           <h1 className="text-2xl font-bold text-gray-800">Fleetwize</h1>
         </a>

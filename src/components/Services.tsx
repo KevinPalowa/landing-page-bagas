@@ -1,17 +1,19 @@
+import { BsGeoAlt, BsBell, BsBarChart } from "react-icons/bs";
+
 const services = [
   {
-    icon: "bi bi-geo-alt",
+    icon: <BsGeoAlt />,
     title: "Pelacakan Kendaraan Real-Time",
     description:
       "Pantau lokasi kendaraan Anda secara langsung kapan saja dan di mana saja.",
   },
   {
-    icon: "bi bi-bell",
+    icon: <BsBell />,
     title: "Pengingat Pemeliharaan Kendaraan",
     description: "Dapatkan pengingat otomatis untuk perawatan kendaraan Anda.",
   },
   {
-    icon: "bi bi-bar-chart",
+    icon: <BsBarChart />,
     title: "Pantau Penggunaan Bahan Bakar",
     description:
       "Optimalkan pengeluaran bahan bakar kendaraan Anda secara akurat.",
@@ -32,9 +34,7 @@ const Services = () => {
               className="p-6 text-center bg-white rounded-lg shadow-lg"
               data-aos="fade-up"
             >
-              <div className={`text-blue-600 text-4xl mb-4`}>
-                <i className={service.icon}></i>
-              </div>
+              <div className="text-blue-600 text-4xl mb-4">{service.icon}</div>
               <h4 className="text-xl font-semibold mb-2">{service.title}</h4>
               <p className="text-gray-600">{service.description}</p>
             </div>
