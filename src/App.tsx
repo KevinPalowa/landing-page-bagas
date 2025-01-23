@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -8,16 +9,11 @@ import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
-import { motion } from "framer-motion";
 import "./App.css";
 
-const sectionVariants = {
+const fadeIn = {
   hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
+  visible: { opacity: 1, y: 0 },
 };
 
 function App() {
@@ -27,80 +23,87 @@ function App() {
 
       {/* Hero Section */}
       <motion.div
-        variants={sectionVariants}
         initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        animate="visible"
+        variants={fadeIn}
+        transition={{ duration: 0.6 }}
       >
         <Hero />
       </motion.div>
 
       {/* About Section */}
       <motion.div
-        variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+        transition={{ duration: 0.6 }}
       >
         <About />
       </motion.div>
 
       {/* Stats Section */}
       <motion.div
-        variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+        transition={{ duration: 0.6, delay: 0.2 }}
       >
         <Stats />
       </motion.div>
 
       {/* Testimonials Section */}
       <motion.div
-        variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+        transition={{ duration: 0.6, delay: 0.4 }}
       >
         <Testimonials />
       </motion.div>
 
       {/* Services Section */}
       <motion.div
-        variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+        transition={{ duration: 0.6, delay: 0.6 }}
       >
         <Services />
       </motion.div>
 
       {/* FAQ Section */}
       <motion.div
-        variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+        transition={{ duration: 0.6, delay: 0.8 }}
       >
         <FAQ />
       </motion.div>
 
       {/* Pricing Section */}
       <motion.div
-        variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+        transition={{ duration: 0.6, delay: 1.0 }}
       >
         <Pricing />
       </motion.div>
 
       {/* Contact Section */}
       <motion.div
-        variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+        transition={{ duration: 0.6, delay: 1.2 }}
       >
         <Contact />
       </motion.div>

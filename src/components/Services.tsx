@@ -15,6 +15,7 @@ const services = [
       "Pantau lokasi kendaraan Anda secara langsung kapan saja dan di mana saja. Dengan teknologi GPS canggih, fleetGPS.id memberi Anda informasi lokasi kendaraan dalam waktu nyata, memberikan rasa aman dan kenyamanan setiap kali Anda atau anggota keluarga bepergian.",
     link: "service-details.html",
     color: "bg-white",
+    bgColor: "bg-red-500", // Custom background color
   },
   {
     icon: <BsBroadcast />,
@@ -23,6 +24,7 @@ const services = [
       "Jangan khawatir lagi melupakan jadwal servis rutin. fleetGPS.id memberikan pengingat otomatis untuk perawatan kendaraan Anda, mulai dari penggantian oli, pengecekan rem, hingga pemeriksaan berkala lainnya. Semua bisa diatur melalui aplikasi, sehingga kendaraan Anda selalu dalam kondisi terbaik.",
     link: "service-details.html",
     color: "bg-white",
+    bgColor: "bg-blue-500", // Custom background color
   },
   {
     icon: <BsEasel />,
@@ -31,6 +33,7 @@ const services = [
       "fleetGPS.id memungkinkan Anda memantau konsumsi bahan bakar kendaraan secara akurat. Dengan fitur ini, Anda bisa mengidentifikasi pola penggunaan bahan bakar dan membuat keputusan yang lebih bijak untuk menghemat pengeluaran.",
     link: "service-details.html",
     color: "bg-white",
+    bgColor: "bg-green-500", // Custom background color
   },
   {
     icon: <BsBoundingBoxCircles />,
@@ -39,6 +42,7 @@ const services = [
       "Dapatkan laporan lengkap mengenai perjalanan Anda—jarak tempuh, kecepatan, konsumsi bahan bakar, hingga waktu yang dihabiskan di jalan. Dengan laporan yang mudah dipahami, fleetGPS.id membantu Anda merencanakan perjalanan dengan lebih baik, serta mengetahui pola penggunaan kendaraan.",
     link: "service-details.html",
     color: "bg-white",
+    bgColor: "bg-purple-500", // Custom background color
   },
   {
     icon: <BsCalendar4Week />,
@@ -47,6 +51,7 @@ const services = [
       "Fitur Geofencing memungkinkan Anda mengatur area aman di mana kendaraan Anda dapat berada. Jika kendaraan Anda keluar dari zona yang telah ditentukan, Anda akan menerima notifikasi segera. Ini memberikan lapisan tambahan keamanan bagi kendaraan Anda.",
     link: "service-details.html",
     color: "bg-white",
+    bgColor: "bg-yellow-500", // Custom background color
   },
   {
     icon: <BsChatSquareText />,
@@ -55,6 +60,7 @@ const services = [
       "Dapatkan dukungan pelanggan kapan saja, 24 jam sehari, 7 hari seminggu. Jika Anda mengalami masalah dengan aplikasi atau memerlukan bantuan terkait kendaraan, tim kami siap memberikan solusi.",
     link: "service-details.html",
     color: "bg-white",
+    bgColor: "bg-orange-500", // Custom background color
   },
 ];
 
@@ -77,7 +83,9 @@ const Services = () => {
               data-aos-delay={index * 100}
             >
               <div className="icon mb-4 text-center">
-                <div className="w-20 h-20 mx-auto flex items-center justify-center text-4xl text-white rounded-full bg-blue-600">
+                <div
+                  className={`w-20 h-20 mx-auto flex items-center justify-center text-4xl text-white rounded-full ${service.bgColor}`}
+                >
                   {service.icon}
                 </div>
               </div>

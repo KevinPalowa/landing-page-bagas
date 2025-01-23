@@ -23,7 +23,6 @@ const testimonials = [
     role: "Pengguna fleetGPS.id",
   },
 ];
-
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -52,9 +51,8 @@ const Testimonials = () => {
           </h2>
         </div>
 
-        {/* Testimonials Carousel */}
-        <div className="relative">
-          {/* Testimonial Item */}
+        {/* Mobile View: Carousel */}
+        <div className="relative lg:hidden">
           <div className="testimonial-item bg-white rounded-lg shadow-lg p-6 text-center mx-auto max-w-xl">
             <p className="text-gray-600 italic mb-6">
               <i className="text-blue-600 mr-2">“</i>
@@ -74,7 +72,7 @@ const Testimonials = () => {
             </h4>
           </div>
 
-          {/* Navigation Buttons */}
+          {/* Navigation Buttons (Mobile Only) */}
           <button
             onClick={handlePrev}
             className="absolute top-1/2 -left-8 transform -translate-y-1/2 bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition"
@@ -87,6 +85,33 @@ const Testimonials = () => {
           >
             &gt;
           </button>
+        </div>
+
+        {/* Desktop View: Grid */}
+        <div className="hidden lg:grid lg:grid-cols-3 lg:gap-8">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="testimonial-item bg-white rounded-lg shadow-lg p-6 text-center flex flex-col justify-between"
+            >
+              <p className="text-gray-600 italic mb-6">
+                <i className="text-blue-600 mr-2">“</i>
+                {testimonial.quote}
+                <i className="text-blue-600 ml-2">”</i>
+              </p>
+              <div>
+                <img
+                  src={testimonial.img}
+                  alt={testimonial.name}
+                  className="testimonial-img w-20 h-20 mx-auto rounded-full mb-4"
+                />
+                <h3 className="text-lg font-bold text-gray-800">
+                  {testimonial.name}
+                </h3>
+                <h4 className="text-sm text-blue-600">{testimonial.role}</h4>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
