@@ -18,9 +18,8 @@ const faqs = [
   },
   {
     question:
-      "Apakah ada santunan jika terjadi kecelakaan pada unit yang terpasang GPS?",
-    answer:
-      "Tidak, saat ini kami hanya membantu dalam proses laporan data GPS saja.",
+      "jika sudah melewati 1 tahun aktif, berapa biaya langganan selanjutnya?",
+    answer: "Cukup membayar Rp600.000 per tahun atau Rp70.000 per bulan.",
   },
   {
     question: "Setelah servis kendaraan, GPS saya tiba-tiba mati?",
@@ -29,7 +28,8 @@ const faqs = [
   },
   {
     question: "Apakah saya bisa membeli putus GPS ini?",
-    answer: "Bisa, dan gratis biaya server selama 12 Bulan.",
+    answer:
+      "Tentu saja bisa! Anda akan mendapatkan gratis biaya server dan pulsa selama 2 tahun",
   },
 ];
 
