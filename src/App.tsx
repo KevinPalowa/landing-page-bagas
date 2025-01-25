@@ -26,7 +26,7 @@ function App() {
         initial="hidden"
         animate="visible"
         variants={fadeIn}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.4 }} // Reduced duration
       >
         <Hero />
       </motion.div>
@@ -37,7 +37,7 @@ function App() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeIn}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.4 }}
       >
         <About />
       </motion.div>
@@ -48,7 +48,7 @@ function App() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeIn}
-        transition={{ duration: 0.6, delay: 0.2 }}
+        transition={{ duration: 0.4 }} // Removed delay for smoother flow
       >
         <Stats />
       </motion.div>
@@ -59,7 +59,7 @@ function App() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeIn}
-        transition={{ duration: 0.6, delay: 0.4 }}
+        transition={{ duration: 0.4 }}
       >
         <Testimonials />
       </motion.div>
@@ -70,7 +70,7 @@ function App() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeIn}
-        transition={{ duration: 0.6, delay: 0.6 }}
+        transition={{ duration: 0.4 }}
       >
         <Services />
       </motion.div>
@@ -81,7 +81,7 @@ function App() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeIn}
-        transition={{ duration: 0.6, delay: 0.8 }}
+        transition={{ duration: 0.4 }}
       >
         <FAQ />
       </motion.div>
@@ -92,7 +92,7 @@ function App() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeIn}
-        transition={{ duration: 0.6, delay: 1.0 }}
+        transition={{ duration: 0.4 }}
       >
         <Pricing />
       </motion.div>
@@ -103,7 +103,7 @@ function App() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeIn}
-        transition={{ duration: 0.6, delay: 1.2 }}
+        transition={{ duration: 0.4 }}
       >
         <Contact />
       </motion.div>
