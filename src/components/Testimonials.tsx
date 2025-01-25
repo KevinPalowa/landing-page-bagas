@@ -11,7 +11,7 @@ const testimonials = [
   {
     quote:
       "Saya telah menggunakan GPS dari FleetGPS selama lebih dari satu tahun, dan sangat puas dengan keandalannya. Berkat FleetGPS, saya merasa lebih aman saat bekerja di malam hari. Pernah suatu ketika saya mengalami kejadian tidak menyenangkan, yaitu menjadi korban begal. Namun, berkat teknologi GPS dari FleetGPS, pelaku berhasil ditemukan dengan cepat. Terima kasih FleetGPS, kini saya dapat bekerja dengan lebih tenang dan percaya diri!",
-    img: "https://placehold.co/600x400?text=Hello+World",
+    img: "/assets/img/testi-1.jpg",
     name: "Syaipul ",
     role: "Driver ojek online",
   },

@@ -5,8 +5,12 @@ import {
   BsBoundingBoxCircles,
   BsCalendar4Week,
   BsChatSquareText,
+  BsThermometerSun,
+  BsFillExclamationCircleFill,
+  BsCameraVideo,
+  BsBoxArrowInRight,
+  BsPlug,
 } from "react-icons/bs";
-
 const services = [
   {
     icon: <BsActivity />,
@@ -61,6 +65,51 @@ const services = [
     link: "service-details.html",
     color: "bg-white",
     bgColor: "bg-orange-500", // Custom background color
+  },
+  {
+    icon: <BsThermometerSun />,
+    title: "Sensor Suhu",
+    description:
+      "Pantau suhu cargo Anda agar tetap berada pada suhu optimal dalam perjalanan.",
+    link: "service-details.html",
+    color: "bg-white",
+    bgColor: "bg-red-600",
+  },
+  {
+    icon: <BsBoxArrowInRight />,
+    title: "Sensor Pintu Kargo",
+    description:
+      "Memantau aktivitas buka-tutup pintu kargo secara real-time dan akurat saat perjalanan.",
+    link: "service-details.html",
+    color: "bg-white",
+    bgColor: "bg-yellow-500",
+  },
+  {
+    icon: <BsCameraVideo />,
+    title: "Kamera AI",
+    description:
+      "Kamera AI mencegah kecelakaan & menjaga keselamatan melalui peringatan suara & rekaman.",
+    link: "service-details.html",
+    color: "bg-white",
+    bgColor: "bg-blue-700",
+  },
+  {
+    icon: <BsFillExclamationCircleFill />,
+    title: "Tombol Panik",
+    description:
+      "Memungkinkan sopir mengirim sinyal apabila mengalami keadaan darurat.",
+    link: "service-details.html",
+    color: "bg-white",
+    bgColor: "bg-orange-600",
+  },
+  {
+    icon: <BsPlug />,
+    title: "Fitur Matikan Mesin",
+    description:
+      "Matikan mesin kendaraan dari jarak jauh apabila terdapat indikasi pencurian atau bahaya.",
+    link: "service-details.html",
+    color: "bg-white",
+    bgColor: "bg-green-500",
   },
 ];
 

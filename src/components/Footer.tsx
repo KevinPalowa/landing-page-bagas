@@ -18,16 +18,28 @@ const Footer = () => {
               Keamanan dan Efisiensi Kendaraan Anda dalam Satu Platform
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-blue-600 hover:text-blue-800 text-xl">
+              <a
+                href="https://x.com/FleetGPS"
+                className="text-blue-600 hover:text-blue-800 text-xl"
+              >
                 <BsTwitter />
               </a>
-              <a href="#" className="text-blue-600 hover:text-blue-800 text-xl">
+              <a
+                href="https://www.facebook.com/Kharscoffee"
+                className="text-blue-600 hover:text-blue-800 text-xl"
+              >
                 <BsFacebook />
               </a>
-              <a href="#" className="text-blue-600 hover:text-blue-800 text-xl">
+              <a
+                href="https://www.instagram.com/fleetgps.id"
+                className="text-blue-600 hover:text-blue-800 text-xl"
+              >
                 <BsInstagram />
               </a>
-              <a href="#" className="text-blue-600 hover:text-blue-800 text-xl">
+              <a
+                href=" https://www.linkedin.com/in/fleetgps-id-104a05346"
+                className="text-blue-600 hover:text-blue-800 text-xl"
+              >
                 <BsLinkedin />
               </a>
             </div>
@@ -40,23 +52,23 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 text-gray-600">
               <li>
-                <a href="#" className="hover:text-blue-600">
+                <a href="#hero" className="hover:text-blue-600">
                   Beranda
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600">
+                <a href="#about" className="hover:text-blue-600">
                   Tentang Kami
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600">
-                  Ketentuan Layanan
+                <a href="#services" className="hover:text-blue-600">
+                  Services
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600">
-                  Kebijakan Privasi
+                <a href="#contact" className="hover:text-blue-600">
+                  Contact
                 </a>
               </li>
             </ul>
@@ -70,10 +82,13 @@ const Footer = () => {
             <p className="text-gray-600">Indonesia</p>
             <p className="mt-4 text-gray-600">
               <strong>Whatsapp:</strong>{" "}
-              <span>+62 838-5055-7070 (Chat Only)</span>
+              <a href="https://wa.me/6283850557070" target="_blank">
+                +62 838-5055-7070 (Chat Only)
+              </a>
             </p>
             <p className="text-gray-600">
-              <strong>Email:</strong> <span>leetgpsid@gmail.com </span>
+              <strong>Email:</strong>{" "}
+              <a href="mailto:fleetgpsid@gmail.com">fleetgpsid@gmail.com </a>
             </p>
           </div>
         </div>

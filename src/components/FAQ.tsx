@@ -31,6 +31,18 @@ const faqs = [
     answer:
       "Tentu saja bisa! Anda akan mendapatkan gratis biaya server dan pulsa selama 2 tahun",
   },
+  {
+    question: "Apakah saya bisa berlangganan hanya platform monitoring saja?",
+    answer:
+      "Tentu bisa, Anda memiliki fleksibilitas untuk berlangganan hanya platform monitoring saja atau layanan SIM-card saja, sesuai kebutuhan Anda.",
+  },
+
+  {
+    question:
+      "Apakah saya bisa request fitur yang lebih canggih sesuai kebutuhan bisnis?",
+    answer:
+      "Tentu saja bisa! Kami memiliki tim R&D profesional yang siap menyesuaikan fitur dengan kebutuhan spesifik bisnis Anda.",
+  },
 ];
 
 const FAQ = () => {

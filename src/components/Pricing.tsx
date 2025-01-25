@@ -11,9 +11,19 @@ const pricingPlans = [
       "Alarm notifikasi kendaraan",
       "Platform monitor iOS/Android",
       "Gratis paket pulsa selama 1 tahun (Rp 70.000/Bulan)",
-      "na:Notifikasi geofence, sadap suara (mic)",
+      "Support 24/7",
+      "na:Notifikasi batasan wilayah (geofence)",
+      "na:Sadap suara",
       "na:Matikan mesin jarak jauh",
       "na:Tombol SOS",
+      "na:CANbus (Control Area Network)",
+      "na:Driver behavior",
+      "na:Monitoring bahan bakar",
+      "na:Sensor (pintu, suhu, & identitas pengemudi)",
+      "na:Kamera dual cam",
+      "na:Kamera DMS (Driver Monitoring System)",
+      "na:Kamera ADAS (Advanced Driver Assistance System)",
+      "na:Kamera livestreaming (Pemantauan kamera langsung)",
     ],
     isFeatured: false,
   },
@@ -25,12 +35,13 @@ const pricingPlans = [
       "Pelacakan lokasi real-time",
       "Playback histori perjalanan",
       "Alarm notifikasi kendaraan",
+      "Platform monitor iOS/Android",
+      "Gratis paket pulsa selama 1 tahun (Rp 70.000/Bulan)",
+      "Support 24/7",
       "Notifikasi batasan wilayah (geofence)",
       "Sadap suara",
       "Matikan mesin jarak jauh",
       "Tombol SOS",
-      "Platform monitor iOS/Android",
-      "Gratis paket pulsa selama 1 tahun (Rp 70.000/Bulan)",
       "na:CANbus (Control Area Network)",
       "na:Driver behavior",
       "na:Monitoring bahan bakar",
@@ -50,6 +61,9 @@ const pricingPlans = [
       "Pelacakan lokasi real-time",
       "Playback histori perjalanan",
       "Alarm notifikasi kendaraan",
+      "Platform monitor iOS/Android",
+      "Gratis paket pulsa selama 1 tahun (Rp 70.000/Bulan)",
+      "Support 24/7",
       "Notifikasi batasan wilayah (geofence)",
       "Sadap suara",
       "Matikan mesin jarak jauh",
@@ -62,8 +76,6 @@ const pricingPlans = [
       "Kamera DMS (Driver Monitoring System)",
       "Kamera ADAS (Advanced Driver Assistance System)",
       "Kamera livestreaming (Pemantauan kamera langsung)",
-      "Platform monitor iOS/Android",
-      "Gratis paket pulsa selama 1 tahun (Rp 70.000/Bulan)",
     ],
     isFeatured: false,
   },
@@ -110,6 +122,17 @@ const Pricing = () => {
                 {plan.features.map((feature, i) => {
                   const isUnavailable = feature.startsWith("na:");
                   const featureText = feature.replace("na:", "");
+
+                  // Check for "70.000" and apply <del> tag
+                  const updatedFeatureText = featureText.includes("70.000") ? (
+                    <>
+                      Gratis paket pulsa selama 1 tahun (Rp <del>70.000</del>
+                      /Bulan)
+                    </>
+                  ) : (
+                    featureText
+                  );
+
                   return (
                     <li
                       key={i}
@@ -122,14 +145,14 @@ const Pricing = () => {
                       ) : (
                         <BsCheck className="text-green-500 mr-2" />
                       )}
-                      <span>{featureText}</span>
+                      <span>{updatedFeatureText}</span>
                     </li>
                   );
                 })}
               </ul>
               <div className="text-center">
                 <a
-                  href="#"
+                  href="https://wa.me/6283850557070"
                   className="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition"
                 >
                   {plan.price !== "Hubungi Kami" ? "Pasang" : "Hubungi Kami"}
