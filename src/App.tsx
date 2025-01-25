@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -11,102 +10,42 @@ import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 import "./App.css";
 
-const fadeIn = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
-};
-
 function App() {
   return (
     <div className="font-raleway">
       <Header />
 
       {/* Hero Section */}
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeIn}
-        transition={{ duration: 0.4 }} // Reduced duration
-      >
-        <Hero />
-      </motion.div>
+
+      <Hero />
 
       {/* About Section */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeIn}
-        transition={{ duration: 0.4 }}
-      >
-        <About />
-      </motion.div>
+
+      <About />
 
       {/* Stats Section */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeIn}
-        transition={{ duration: 0.4 }} // Removed delay for smoother flow
-      >
-        <Stats />
-      </motion.div>
+
+      <Stats />
 
       {/* Testimonials Section */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeIn}
-        transition={{ duration: 0.4 }}
-      >
-        <Testimonials />
-      </motion.div>
+
+      <Testimonials />
 
       {/* Services Section */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeIn}
-        transition={{ duration: 0.4 }}
-      >
-        <Services />
-      </motion.div>
+
+      <Services />
 
       {/* FAQ Section */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeIn}
-        transition={{ duration: 0.4 }}
-      >
-        <FAQ />
-      </motion.div>
+
+      <FAQ />
 
       {/* Pricing Section */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeIn}
-        transition={{ duration: 0.4 }}
-      >
-        <Pricing />
-      </motion.div>
+
+      <Pricing />
 
       {/* Contact Section */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeIn}
-        transition={{ duration: 0.4 }}
-      >
-        <Contact />
-      </motion.div>
+
+      <Contact />
 
       <Footer />
     </div>
