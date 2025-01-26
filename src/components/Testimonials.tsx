@@ -4,7 +4,7 @@ const testimonials = [
   {
     quote:
       "saya menggunakan fleetgpsid selama 8bulan dasaya merasakan manfaatnya untuk memonitoring kenadaraan saya, dan tidak perlu khawatir karna dapat dimatikan mesinnya jarak jauh, serta menhemat bahan bakardan biaya untuk perawatan",
-    img: "https://placehold.co/600x400?text=Hello+World",
+    img: "/assets/img/testi-2.jpg",
     name: "Bunga Fauziah",
     role: "Pengguna Pribadi",
   },
@@ -18,7 +18,7 @@ const testimonials = [
   {
     quote:
       "Fitur pengingat pemeliharaan sangat membantu! Kendaraan saya selalu dalam kondisi terbaik dan tidak pernah terlewat untuk servis rutin.",
-    img: "https://placehold.co/600x400?text=Hello+World",
+    img: "/assets/img/testi-3.webp",
     name: "Lia",
     role: "Pengguna fleetGPS.id",
   },
@@ -62,7 +62,7 @@ const Testimonials = () => {
             <img
               src={testimonials[currentIndex].img}
               alt={testimonials[currentIndex].name}
-              className="testimonial-img w-20 h-20 mx-auto rounded-full mb-4"
+              className="testimonial-img w-20 h-20 mx-auto rounded-full mb-4 object-cover"
             />
             <h3 className="text-lg font-bold text-gray-800">
               {testimonials[currentIndex].name}
@@ -103,7 +103,7 @@ const Testimonials = () => {
                 <img
                   src={testimonial.img}
                   alt={testimonial.name}
-                  className="testimonial-img w-20 h-20 mx-auto rounded-full mb-4"
+                  className="testimonial-img w-20 h-20 mx-auto rounded-full mb-4 object-cover"
                 />
                 <h3 className="text-lg font-bold text-gray-800">
                   {testimonial.name}

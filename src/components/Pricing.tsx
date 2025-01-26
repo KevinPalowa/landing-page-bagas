@@ -4,7 +4,6 @@ const pricingPlans = [
   {
     name: "Standar",
     price: "999.000",
-    duration: "/ Bulan",
     features: [
       "Pelacakan lokasi real-time",
       "Playback histori perjalanan",
@@ -30,7 +29,6 @@ const pricingPlans = [
   {
     name: "Plus",
     price: "1.599.000",
-    duration: "/ Bulan",
     features: [
       "Pelacakan lokasi real-time",
       "Playback histori perjalanan",
