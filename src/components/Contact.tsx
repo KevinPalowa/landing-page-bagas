@@ -1,5 +1,6 @@
 import { BsTelephone, BsEnvelope } from "react-icons/bs";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,7 +23,7 @@ const Contact = () => {
     e.preventDefault();
 
     const botToken = "7302897669:AAF08-22QRLWxzis11YZgX3bV4AYVmTOzg0"; // Replace with your bot's API token
-    const chatId = "626714095"; // Replace with your chat ID
+    const chatId = "-1002442130345"; // Replace with your chat ID
     const message = `
       📝 *New Contact Form Submission*:
       - *Name*: ${formData.name}
@@ -48,14 +49,14 @@ const Contact = () => {
       );
 
       if (response.ok) {
-        alert("Pesan berhasil dikirim ke Telegram!");
+        toast.success("Pesan berhasil dikirim!");
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        alert("Terjadi kesalahan. Silakan coba lagi.");
+        toast.error("Terjadi kesalahan. Silakan coba lagi.");
       }
     } catch (error) {
       console.error("Error sending message to Telegram:", error);
-      alert("Tidak dapat mengirim pesan. Periksa koneksi Anda.");
+      toast.error("Tidak dapat mengirim pesan. Periksa koneksi Anda.");
     }
   };
 

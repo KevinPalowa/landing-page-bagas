@@ -9,6 +9,7 @@ import FAQ from "./components/FAQ";
 import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 import "./App.css";
+import DaftarReseller from "./components/DaftarReseller";
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
       <FAQ />
 
       {/* Pricing Section */}
-
+      <DaftarReseller />
       <Pricing />
 
       {/* Contact Section */}
