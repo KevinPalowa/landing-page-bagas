@@ -1,5 +1,5 @@
 const stats = [
-  { count: 3, label: "Pengguna" },
+  { count: 100, label: "Pengguna" },
   { count: 2, label: "Proyek" },
   { count: 168, label: "Jam Dukungan" },
   { count: 5, label: "Pekerja" },
